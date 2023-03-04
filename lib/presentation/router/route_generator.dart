@@ -4,7 +4,6 @@ import 'package:rcade/presentation/screen/physcial_activity.dart';
 import 'package:rcade/presentation/screen/splash_screen.dart';
 import 'package:rcade/presentation/screen/started_1.dart';
 import 'package:rcade/presentation/screen/started_2.dart';
-import 'package:rcade/presentation/screen/tell_yourself.dart';
 
 class RouteGenerator extends NavigatorObserver {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -17,8 +16,6 @@ class RouteGenerator extends NavigatorObserver {
         return MaterialPageRoute(builder: (_) => const StartedOne());
       case '/started-two':
         return MaterialPageRoute(builder: (_) => const StartedTwo());
-      case '/tell-yourself':
-        return MaterialPageRoute(builder: (_) => const TellYourself());
       case '/physical-activity':
         return MaterialPageRoute(builder: (_) => const PhysicalActivity());
       case '/ailment-info':
